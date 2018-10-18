@@ -42,5 +42,5 @@ $ bash reannotate.sh Locustag species assembly.fasta :-
 
 # Finally, Roary is run on all the sequences.
 # Explanation of options: (p) 30 threads, (e) codon aware alignment (slow but accurate, with PRANK), (i) blast ID of 90%
-# (cd) 94% of isolates must contain genes to be core (this is 32 out of 34 total genomes), (r) makes plots.
+# (cd) 94% of isolates must contain genes to be core (this is 31 out of 33 total genomes), (r) makes plots.
 roary -p 30 -e -i 90 -cd 94 -r -v master_gff3_store/*.gff |& tee -a output.log
